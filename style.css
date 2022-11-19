@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+.video-cont{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+}
+video{
+    height: 100%;
+    width: 100%;
+}
+.action-cont{
+    position: absolute;
+    
+    top: calc((100vh - 13rem)/2);
+    right:4rem;
+    color:white;
+    height:13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 2;
+}
+
+.action-cont>*{
+    height: 4.75rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    border:2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.record-btn{
+background-color: red;
+border-radius: 75%;
+height: 2rem;
+width: 2rem;
+
+}
+.capture-btn{
+background-color: white;
+border-radius: 75%;
+height: 2rem;
+width: 2rem;
+}
+
+.action-record{
+    animation-name: scale-record;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+}
+@keyframes scale-record{
+    0%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+.action-capture{
+    animation-name: scale-capture;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+@keyframes scale-capture{
+    0%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
+.timer-cont{
+    position: absolute;
+    top:5vh;
+    left: 5vw;
+    color:aquamarine;
+    font-size: larger;
+    display: none;
+    z-index: 2;
+}
+.filter-cont{
+    height: 20rem;
+    width: 7rem;
+    position: absolute;
+    top: calc((100vh - 20rem - 8rem)/2);
+    left:4rem;
+    z-index: 2;
+}
+
+.filter{
+    background-image: url("https://picsum.photos/seed/picsum/200/300");
+    background-blend-mode: color-burn;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-color: rgb(166, 207, 193);
+    height: 5rem;
+    margin: 1rem;
+    
+}
+.red{
+    background-color:#ffa50052;
+ 
+}
+.blue{
+    background-color: #a52a2a59;
+}
+.pink{
+    background-color: #ffc0cb57;
+   
+}
+.transparent{
+    background-color: transparent;
+}
+.filter-layer{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.gallery-icon{
+    color: white;
+    font-size: 4rem;
+}
+.gallery-cont{
+    position: absolute;
+    bottom: 4rem;
+    right:4rem ;
+    z-index: 2;
+}
+.gallery-cont:hover{
+    cursor: pointer;
+}

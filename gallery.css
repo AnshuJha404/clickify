@@ -1,0 +1,62 @@
+.back-button{
+    background-color: black;
+    height: 5rem;
+    width: 6rem;
+    color: white;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back-button:hover{
+    cursor: pointer;
+}
+.gallery-cont{
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #3F3351;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.media-cont{
+    width: 12rem;
+    height: 15rem;
+    border:3px solid white;
+    margin: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.action-btn>*{
+    height: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.action-btn{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.media-content>*{
+    object-fit: fill;
+    height: 100%;
+    width: 100%;
+}
+.media-content{
+    height: calc(100% - 4rem);
+}
+.delete-button{
+    background-color: #FF0000;
+}
+.download-button{
+    background-color: #125C13;
+}
+
+
